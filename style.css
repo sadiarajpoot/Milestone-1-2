@@ -2,16 +2,20 @@
 body{
 	background-color: #fff;
 	font-family: "Roboto", sans-serif;
-	margin: 0px;
-	padding: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 100vh;
 }
 .resume_con{
 	display: flex;
 	background-color: #fff;
 	width: 80%;
+	min-width: 300px;
 	margin: 0 auto;
 	border-radius: 10px;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+	overflow: hidden; 
 }
 .Profile_Picture{
     width: 200px;
@@ -91,6 +95,9 @@ button:hover{
 #Cerfication{
 	margin-top: 50px;
 }
+.left_section, .Right_section {
+	box-sizing: border-box; 
+}
 @media (max-width: 480px){
 	h1{
 		font-size: 20px;
@@ -102,43 +109,32 @@ button:hover{
 	p{
 		font-size: 12px;
 		line-height: 20px;
+		padding: 3px;
 	}
 	button{
 		font-size: 16px;
-		width:  100%;
+		width:  80%;
 		height: 40px;
 		margin:  10px auto;
 	}
 }
 @media (max-width: 768px) {
-  .resume_con {
-    flex-direction: column;
-    width: 90%;
-  }
+	.resume_con {
+		flex-direction: column;
+		width: 80%; 
+		margin-left: 30px;
+	}
 
-  .left_section {
-    width: 92%;
-    padding: 15px;
-    border-right: none;
-    border-top: 6px solid #f695c5;
-    border-radius: 10px 10px 0 0;
-    order: -1;
-		border-bottom-right-radius: 5px;
-		border-bottom-left-radius: 5px;
-  }
+	.left_section {
+		width: 100%;
+	}
 
-  .Right_section {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .Profile_Picture {
-    width: 120px;
-    height: 120px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
+	.Right_section {
+		width: 100%;
+	}
+		.left_section, .Right_section {
+	
+		padding: 15px; 
+		box-sizing: border-box;
+	}
 }
-
